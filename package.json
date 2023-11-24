@@ -1,6 +1,6 @@
 {
     "name": "sticky-observer",
-    "version": "0.1.0-beta.1",
+    "version": "1.0.0",
     "description": "Observe when sticky elements become stuck and unstuck.",
     "type": "module",
     "main": "./dist/sticky-observer.js",
