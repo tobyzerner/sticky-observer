@@ -17,9 +17,9 @@ npm install sticky-observer --save
 ```ts
 import StickyObserver from 'sticky-observer';
 
-// Construct the observer by passing the element to watch, and a 
+// Construct the observer by passing the element to watch, and a
 // callback to be run whenever the element becomes stuck or unstuck.
-const observer = new StickyObserver(el, stuck => {
+const observer = new StickyObserver(el, (stuck) => {
     el.classList.toggle('is-stuck', stuck);
 });
 ```
@@ -30,7 +30,7 @@ You can pass options as the third argument:
 
 ```ts
 const observer = new StickyObserver(el, callback, {
-    // The element that is used as the viewport for checking the state of the 
+    // The element that is used as the viewport for checking the state of the
     // element. Defaults to the browser viewport if not specified.
     root: document,
 });
