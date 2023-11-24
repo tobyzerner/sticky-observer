@@ -1,10 +1,10 @@
 {
     "name": "sticky-observer",
     "description": "Observe when sticky elements become stuck and unstuck.",
-    "main": "dist/index.js",
-    "module": "dist/index.js",
     "type": "module",
-    "types": "dist/index.d.ts",
+    "main": "./dist/sticky-observer.js",
+    "module": "./dist/sticky-observer.js",
+    "types": "./dist/types/index.d.ts",
     "license": "MIT",
     "repository": "tobyzerner/sticky-observer",
     "files": [
@@ -14,7 +14,7 @@
     "sideEffects": false,
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build",
+        "build": "tsc --noEmit && vite build && tsc --emitDeclarationOnly",
         "preview": "vite preview",
         "release": "release-it"
     },
