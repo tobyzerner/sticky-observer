@@ -29,7 +29,7 @@ export default class StickyObserver {
         const style = getComputedStyle(this.el);
         const rootMargin = (['top', 'right', 'bottom', 'left'] as const)
             .map((side) =>
-                style[side] === 'auto'
+                style[side] === 'auto' || !style[side]
                     ? '100%'
                     : `${-1 * parseInt(style[side]) - 1}px`,
             )
